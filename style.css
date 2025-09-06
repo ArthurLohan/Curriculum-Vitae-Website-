@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("./fonts/GlacialIndifference-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Glacial Indifference";
+    src: url(./fonts/GlacialIndifference-Bold.otf) format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+  height: 100vh;
+}
+
+.introduction {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/intro.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-intro {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-intro h1 {
+  font-size: 62pt;
+  color: white;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 2px 2px 4px;
+}
+
+.content-intro span {
+  text-decoration: underline;
+}
+
+.content-intro h2 {
+  font-size: 36pt;
+  color: white;
+  font-family: "Glacial Indifference", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.introduction2 {
+  width: 100%;
+  height: 100%;
+  background-color: #fff3c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-intro2 {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.img-intro2 {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  padding-top: 30px;
+}
+
+.content-intro2 h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 58pt;
+  color: #3a87d6;
+  padding-top: 30px;
+}
+
+.content-intro2 p {
+  font-family: "Glacial Indifference", sans-serif;
+  font-size: 27pt;
+  width: 60%;
+  color: #3a87d6;
+  text-align: center;
+}
+
+.content-intro2 .dot {
+  margin-top: auto;
+  padding-bottom: 30px;
+  font-size: 85pt;
+  color: #3a87d6;
+}
+
+.skill-experience {
+  width: 100%;
+  height: 100%;
+  background-color: #fff3c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-skill {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-skill > div {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 80%;
+}
+
+.title {
+  grid-area: 1/1/2/-1;
+  background-color: #3a87d6;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title > h2{
+    font-size: 48pt;
+    font-family: "Poppins" , sans-serif;
+    color: #fff3c2;
+}
+
+.content-skill > div > content {
+    display: flex;
+    padding-left: 30px;
+}
+
+.contents{
+    grid-area: 2/1/3/2;
+    padding-left: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.contents > div {
+    display: flex;
+    align-items: center;
+}
+
+.contents img{
+    width: 50px;
+    height: 50px;
+}
+
+.content-skill h3{
+    font-size: 25pt;
+    font-family: "Glacial Indifference", sans-serif;
+    
+}
+
+.skill h3{
+    padding-left: 25px;
+    display: inline;
+}
+
+.projects .contents > div{
+    display: block;
+} 
+
+.projects .contents > div > p{
+    font-family: "Glacial Indifference", sans-serif;
+    padding-top: 5px;
+    width: 70%;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.experience .contents > div{
+    display: block;
+} 
+
+.experience .contents > div > p{
+    font-family: "Glacial Indifference", sans-serif;
+    padding-top: 5px;
+    width: 70%;
+    font-size: 16pt;
+    text-align: justify
+}
+
+.contact {
+  width: 100%;
+  height: 80%;
+  background-color: #fff3c2;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.contact content{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+}
+
+.contact h3{
+    font-size: 36pt;
+    line-height: 1;
+    color:#3a87d6
+}
+
+.contact h2{
+    font-size: 58pt;
+    line-height: 1;
+    color:#3a87d6
+}
+
+.contact button{
+    width: 220px;
+    height: 70px;
+    border-radius: 12px;
+    background-color: white;
+    border: none;
+}
+
+.contact button:hover{
+    opacity: 0.7;
+}
+
+
+.contact button img{
+    width: 100px;
+    height: 50px;
+    
+}
+
+footer {
+  width: 100%;
+  height: 20%;
+  background-color: #3a87d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+
+footer p{
+    color: #fff3c2;
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 16pt;
+}
+
